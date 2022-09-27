@@ -28,6 +28,8 @@ body {
 }
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 p,
@@ -38,13 +40,6 @@ h4,
 h5,
 h6 {
   margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
 }
 
 img {
@@ -58,6 +53,11 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* --------------HEADER------------- */
@@ -204,7 +204,6 @@ img {
 /* -------------------ABOUT----------------- */
 .about {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .about-list {
@@ -220,7 +219,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .about-text {
@@ -243,8 +242,8 @@ img {
 }
 .benefits-list {
   display: flex;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  justify-content: center;
+  margin-top: 50px;
   gap: 30px;
 }
 
@@ -260,18 +259,19 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
 .team-item {
   background-color: var(--beckground-color);
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
 }
 
 .team-img {
@@ -281,9 +281,6 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
 }
 
 .team-name {
@@ -311,6 +308,13 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-item {
+  margin-top: 9px;
+}
+.footer-item:first-child {
+  margin-top: 20px;
+}
+
 .logo-footer {
   font-family: "Raleway";
   color: #ffffff;
@@ -318,9 +322,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.footer-list {
 }
 
 .footer-address {
@@ -331,7 +332,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   display: inline-block;
-  margin-top: 20px;
 }
 
 .footer-address:hover,
@@ -347,7 +347,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
   display: inline-block;
-  margin-top: 9px;
 }
 
 .footer-link:hover,
@@ -363,7 +362,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
   display: inline-block;
-  margin-top: 9px;
 }
 
 .footer-tel:hover,
@@ -377,8 +375,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .filter-btn {
@@ -415,8 +412,8 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding-top: 34px;
-  padding-bottom: 94px;
+  margin-top: 34px;
+  flex-basis: calc((100%-60px) / 3);
 }
 
 .content-item {
@@ -437,4 +434,5 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--ouwer-text-color);
+  margin-top: 4px;
 }
