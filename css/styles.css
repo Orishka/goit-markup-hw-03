@@ -308,11 +308,8 @@ img {
   padding-bottom: 60px;
 }
 
-.footer-item {
+.footer-item:not(:first-child) {
   margin-top: 9px;
-}
-.footer-item:first-child {
-  margin-top: 20px;
 }
 
 .logo-footer {
@@ -332,6 +329,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   display: inline-block;
+  margin-top: 20px;
 }
 
 .footer-address:hover,
@@ -412,8 +410,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 34px;
-  flex-basis: calc((100%-60px) / 3);
 }
 
 .content-item {
